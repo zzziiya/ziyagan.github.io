@@ -1,0 +1,70 @@
+/* 
+  CSS flex guide:
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ */
+@font-face {
+  font-family: 'Coquette';
+  /* src: url('font/Coquette Light-Webfont/Webfonts/coquette_light_macroman/coquette-light-webfont.woff2'); */
+  src: url('./coquette-light-webfont.woff2');
+
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  font-family: 'Open Sans';
+}
+/* ----- Header ----- */
+header {
+  font-size: 42px;
+  font-weight: 300;
+  font-family: Coquette;
+  padding-top: 50px;
+}
+
+/* ----- Navigator ----- */
+nav {
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+nav .nav-item {
+  width: 60px;
+}
+
+/* ----- Main Section ----- */
+.main {
+  flex: 1;
+  padding-top: 50px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.gallery-col {
+  margin: 0 8px;
+}
+.gallery-item {
+  width: 249px;
+  margin-top: 16px;
+}
+.gallery-item img {
+  max-width: 100%;
+}
+
+/* ----- Footer ----- */
+footer {
+  justify-content: flex-end;
+  padding-bottom: 15px;
+  padding-top: 50px;
+}

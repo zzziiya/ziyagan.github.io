@@ -27,7 +27,6 @@ header {
   font-family: Coquette;
   padding-top: 50px;
 }
-
 /* ----- Navigator ----- */
 nav {
   display: flex;
@@ -39,7 +38,15 @@ nav {
 nav .nav-item {
   width: 60px;
 }
+/* ----- global classes----- */
+.title{
+	font-size: 28px;
+}
 
+.content{
+	font-size: 15px;
+	color: #6f6f6f;
+}
 /* ----- Main Section ----- */
 .main {
   flex: 1;
@@ -61,10 +68,29 @@ nav .nav-item {
 .gallery-item img {
   max-width: 100%;
 }
-
+/* ----- Artwork page ----- */
+.artwork{
+	display: flex;
+ 	flex-direction: row;
+ 	justify-content: center;
+}
+.artwork-col{
+	margin: 0 20px;
+}
+.artwork-item {
+  margin-top: 70px;
+  max-width: 780px;
+}
+.artwork-item img {
+  max-width: 100%;
+}
+.artwork-title{
+	padding-top: 90px;
+}
 /* ----- Footer ----- */
 footer {
+	font-size: 11px;
   justify-content: flex-end;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
   padding-top: 50px;
 }

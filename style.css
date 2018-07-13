@@ -44,6 +44,7 @@ nav .nav-item {
 }
 
 .content{
+  margin-top: 30px;
 	font-size: 15px;
 	color: #6f6f6f;
 }
@@ -62,11 +63,41 @@ nav .nav-item {
   margin: 0 8px;
 }
 .gallery-item {
-  width: 249px;
-  margin-top: 16px;
+  width: 240px;
+  margin-top: 10px;
 }
 .gallery-item img {
   max-width: 100%;
+}
+/* ----- hover ----- */
+.wraper{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.wraper img{
+  transition: .5 ease;
+}
+.content-hover{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.overlay{
+  opacity: 0;
+}
+.wrapper:hover img{
+  opacity: .3;
+}
+.wraper:hover .overlay{
+  opacity: 1;
 }
 /* ----- Artwork page ----- */
 .artwork{
@@ -78,7 +109,7 @@ nav .nav-item {
 	margin: 0 20px;
 }
 .artwork-item {
-  margin-top: 70px;
+  margin-top: 30px;
   max-width: 780px;
 }
 .artwork-item img {
@@ -87,6 +118,15 @@ nav .nav-item {
 .artwork-title{
 	padding-top: 90px;
 }
+/* ----- About page ----- */
+.about-title{
+  padding-top: 20px;
+}
+
+.self-intro{
+  padding-top: 20px;
+}
+
 /* ----- Footer ----- */
 footer {
 	font-size: 11px;

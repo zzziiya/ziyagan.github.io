@@ -20,6 +20,10 @@ body {
   text-align: center;
   font-family: 'Open Sans';
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* ----- Header ----- */
 header {
   font-size: 42px;
@@ -44,6 +48,7 @@ nav .nav-item {
 }
 
 .content{
+  margin-top: 30px;
 	font-size: 15px;
 	color: #6f6f6f;
 }
@@ -62,31 +67,61 @@ nav .nav-item {
   margin: 0 8px;
 }
 .gallery-item {
-  width: 249px;
-  margin-top: 16px;
+  width: 240px;
+  margin-top: 10px;
+
+  position: relative;
+}
+.gallery-item__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.gallery-item:hover .gallery-item__overlay {
+  opacity: 1;
+}
+.gallery-item:hover img{
+  opacity: .3;
 }
 .gallery-item img {
   max-width: 100%;
 }
+
 /* ----- Artwork page ----- */
-.artwork{
-	display: flex;
- 	flex-direction: row;
- 	justify-content: center;
-}
-.artwork-col{
-	margin: 0 20px;
-}
-.artwork-item {
-  margin-top: 70px;
-  max-width: 780px;
-}
-.artwork-item img {
-  max-width: 100%;
-}
 .artwork-title{
 	padding-top: 90px;
 }
+
+.artwork{
+	display: flex;
+ 	flex-direction: column;
+	margin: 0 20px;
+   
+}
+.artwork-item {
+  margin-top: 30px;
+}
+.artwork-item img {
+  max-width: 780px;
+}
+/* ----- About page ----- */
+.about-title{
+  padding-top: 20px;
+}
+
+.self-intro{
+  padding-top: 20px;
+}
+
+.about-img {
+  max-width: 480px;
+}
+
 /* ----- Footer ----- */
 footer {
 	font-size: 11px;

@@ -8,13 +8,13 @@ import {
 import NavBar from 'components/NavBar'
 
 import Gallery from './routes/Gallery'
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App main">
+        <div className="main">
           <NavBar />
 
           <Switch>

@@ -14,14 +14,16 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="main">
+        <div>
           <NavBar />
 
-          <Switch>
-            {/* <Route exact path='/about' component={} /> */}
-            {/* <Route exact path='/:artwork' component={} /> */}
-            <Route path='/' component={Gallery} />
-          </Switch>
+          <div className='main'>
+            <Switch>
+              {/* <Route exact path='/about' component={} /> */}
+              {/* <Route exact path='/artwork/:artwork' component={} /> */}
+              <Route path='/' component={Gallery} />
+            </Switch>
+          </div>
         </div>
       </BrowserRouter>
     );

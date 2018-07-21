@@ -9,8 +9,7 @@ const GalleryItem = ({
 }) => (
   <Link to={`/artworks/${slug}`}>
     <div className="gallery-item">
-      {/* TODO: dynamically import image */}
-      <img src="./img/souffle_cover.jpg" />
+      <img src={require(`media/image/${coverImgName}`)} alt={slug}/>
       <div className="gallery-item__overlay">
         <div>
           {title}

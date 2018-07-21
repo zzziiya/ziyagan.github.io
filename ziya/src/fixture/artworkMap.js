@@ -26,7 +26,7 @@ const artworkMap = {
   travelFrog: {
     title: 'Travel Frog Like',
     slug: 'travelFrog',
-    coverImgName: 'frog_cover.jpg',
+    coverImgName: 'travel frog_cover.png',
     artworkType: 'Game'
   },
   timeTrader: {

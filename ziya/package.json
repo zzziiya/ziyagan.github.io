@@ -48,9 +48,12 @@
   "scripts": {
     "start": "NODE_PATH=src node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.0",
     "node-sass": "^4.9.2",
     "sass-loader": "^7.0.3"
   },

@@ -8,6 +8,8 @@ import {
 import NavBar from 'components/NavBar'
 
 import Gallery from './routes/Gallery'
+import Artwork from './routes/Artwork'
+import About from './routes/About'
 import './App.scss';
 
 class App extends Component {
@@ -19,8 +21,8 @@ class App extends Component {
 
           <div className='main'>
             <Switch>
-              {/* <Route exact path='/about' component={} /> */}
-              {/* <Route exact path='/artwork/:artwork' component={} /> */}
+              <Route exact path='/about' component={About} />
+              <Route exact path='/artworks/:artwork' component={Artwork} />
               <Route path='/' component={Gallery} />
             </Switch>
           </div>

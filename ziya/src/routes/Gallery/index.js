@@ -4,9 +4,11 @@ import gallery from 'fixture/gallery';
 
 import GalleryCol from './GalleryCol';
 
-const Gallery = ({}) => (
+const Gallery = () => (
   <div className="gallery">
-    {gallery.map(galleryCol => <GalleryCol colItems={galleryCol} />)}
+    {gallery.map((galleryCol, i) => 
+      <GalleryCol key={i} colItems={galleryCol} />
+    )}
   </div>
 )
 

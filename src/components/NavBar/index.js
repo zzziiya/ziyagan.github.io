@@ -17,11 +17,6 @@ const NavBar = () => (
           About
         </div>
       </Link>
-      <Link to="/contact">
-        <div className="nav-item">
-          Contact
-        </div>
-      </Link>
     </nav>
   </div>
 )

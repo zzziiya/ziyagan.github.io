@@ -1,4 +1,3 @@
-'use strict';
 
 const autoprefixer = require('autoprefixer');
 const path = require('path');
@@ -90,7 +89,9 @@ module.exports = {
     // for React Native Web.
     extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
-      
+      'components': path.resolve('src/components'),
+      'media': path.resolve('src/media'),
+      'fixture': path.resolve('src/fixture'),
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
@@ -133,6 +134,11 @@ module.exports = {
         // match the requirements. When no loader matches it will fall
         // back to the "file" loader at the end of the loader list.
         oneOf: [
+          {
+            test: /\.scss$/,
+            include: paths.appSrc,
+            loaders: ["style-loader", "css-loader", "sass-loader"]
+          },
           // "url" loader works just like "file" loader but it also embeds
           // assets smaller than specified size as data URLs to avoid requests.
           {

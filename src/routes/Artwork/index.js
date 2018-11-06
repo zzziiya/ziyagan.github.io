@@ -14,25 +14,11 @@ const Artwork = ({ match }) => {
   }
 
   const {
-    contentTitle,
-    contentBrief,
-    contentText,
     contentImages,
   } = artworkData;
 
   return (
     <div>
-      {/* <div className="title artwork-title">
-        {contentTitle}
-      </div> */}
-
-      {/* <p className="content">
-        {contentBrief}
-        <br />
-        {contentText}
-        <br />
-      </p> */}
-      
       <div className="artwork">
         {contentImages && 
           contentImages.map(image => (
